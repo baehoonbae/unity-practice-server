@@ -1,0 +1,57 @@
+# Binaries and Build outputs
+##########################
+bin/
+obj/
+build/
+Build/
+Builds/
+msbuild.log
+msbuild.err
+*. VisualStudio.*
+
+# User-specific files
+#####################
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE specific folders
+######################
+.idea/
+.vs/
+
+# Rider specific
+##############
+*.sln.iml
+_ReSharper*/
+*.[Rr]ider*/
+rider.user.settings.json
+
+# Environment files (if you use .env for secrets)
+#############
+.env
+
+# Secrets (Add any files containing secrets, like connection strings or API keys)
+#############
+# Example:
+# appsettings.Secret.json
+# secrets.txt
+
+# NuGet Packages
+###############
+# Exclude packages folder - use restore command instead
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# NuGet v3's project.lock.json file maintains state between calls to 'dotnet restore'.
+**/project.lock.json
+# Roslyn compiler cache
+**/roslyn/*
+
+# Other
+#######
+*.log
+*.err
+*.DS_Store
+Thumbs.db
